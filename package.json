@@ -1,0 +1,29 @@
+{
+  "name": "ethlondon-flash",
+  "version": "1.0.0",
+  "description": "flashy, flashy",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev-environment": "npm i && tail -f /dev/null",
+    "dev:cleanDeploy": "npm run compile && npm run dev:migrate",
+    "ropsten:cleanDeploy": "npm run compile && npm run ropsten:migrate",
+    "dev:migrate": "truffle migrate --reset --network development",
+    "ropsten:migrate": "truffle migrate --reset --network ropsten",
+    "compile": "npm run clean-contracts && truffle compile",
+    "clean-contracts": "rm -rf build"
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "2.3.0",
+    "solc": "0.5.6",
+    "truffle": "5.0.30",
+    "truffle-artifactor": "4.0.24",
+    "truffle-assertions": "0.9.1",
+    "truffle-hdwallet-provider": "1.0.6",
+    "truffle-typings": "1.0.8"
+  },
+  "author": "Aave",
+  "license": "MIT"
+}

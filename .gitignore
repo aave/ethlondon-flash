@@ -1,0 +1,12 @@
+node_modules/
+build/
+dist/
+utils/typechain-types/
+.idea
+.vscode
+migrations/development-deployed-addresses.json
+migrations/kovan-deployed-addresses.json
+migrations/ropsten-deployed-addresses.json
+coverage/
+
+thegraph/subgraph.yaml

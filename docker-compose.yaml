@@ -1,0 +1,28 @@
+version: '3.5'
+
+services:
+    contracts-env:
+        image: node:13
+        working_dir: /src
+        volumes:
+          - ./:/src
+        command: npm run dev-environment
+        restart: always
+        depends_on:
+            - ganache
+        environment:
+            TARGET: "dev"
+            MNEMONIC: "love acoustic globe melt slide polar napkin inspire silly plate clever dose"
+            DEPLOYMENT_ADDRESS: "0x74EF62DB95EF94A8Ef6616f375Bff99AbC49782f"
+            ETHEREUM_PROVIDER_URL_ROPSTEN: "https://ropsten.infura.io/v3/52eaca096f804c22982aa6d8e3f390f1"
+  
+    ganache:
+        image: trufflesuite/ganache-cli:next
+        ports:
+          - "8545:8545"
+        command: [
+          "ganache-cli",
+          "--gasLimit", "8000000",
+          "--mnemonic", "love acoustic globe melt slide polar napkin inspire silly plate clever dose",
+          "--hardfork", "istanbul"
+        ]

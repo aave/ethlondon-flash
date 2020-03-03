@@ -25,7 +25,7 @@ The main available scripts (using the **dev:** prefix as example) are:
 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE
 
 ### FlashExchange (Mainnet)
-0xF1d29e94754C897D4e51c13DEA9B27a35C7DD653
+0xD81e1388a956f5E305885fEE8861A523B7e9Ee97
 
 ## Credits
 

@@ -16,7 +16,7 @@ The main available scripts (using the **dev:** prefix as example) are:
 ## Addresses
 
 ### FlashExchange (Ropsten)
-0xA211b59A3dbD38614D1700C66E179621eef8319F
+0x8cc0381cE460650bECd4285fB96F5dA16cD5FFa1
 
 ### DAI (Ropsten)
 0xf80a32a835f79d7787e8a8ee5721d0feafd78108
